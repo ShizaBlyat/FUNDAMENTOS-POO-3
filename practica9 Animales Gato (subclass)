@@ -1,0 +1,21 @@
+package Animales;
+public class Gato extends Animal {
+    private int numVidas;
+    // Constructor sin argumentos
+    public Gato() {
+        super();
+        this.numVidas = 7;}
+    // Constructor con parámetros para establecer el número de vidas
+    public Gato(String nombre, int edad) {
+        super(nombre, edad);
+        this.numVidas = 7;}
+    // Constructor con parámetros para establecer nombre, edad y número de vidas
+    public Gato(String nombre, int edad, int numVidas) {
+        super(nombre, edad); // Llama al constructor de la superclase (Animal)
+        this.numVidas = numVidas;}
+    // Método para quitar una vida al gatito :c
+    public void quitaVida() {numVidas--;}
+    // Método toString()
+    @Override
+    public String toString() {
+        return "Hola, soy un GATO, me llamo " + nombre + ", tengo " + edad + " años. Y tengo " + numVidas + " vidas"; } }
