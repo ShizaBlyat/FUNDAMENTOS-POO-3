@@ -22,10 +22,16 @@ public class Main {
         System.out.println(p1.toString());
         Perro p2 = new Perro("Pug");
         System.out.println(p2.toString());
-        Perro p3 = new Perro("Alan",19,"Perro en busca de una cachorra");
+        Perro p3 = new Perro("Tilino",1,"Salchicha");
         System.out.println(p3.toString());
-        Gato g1 = new Gato("Pelusa",5,7);
+        Gato g1 = new Gato("Pelusa",5,4);
+        // Quitamos una vida al gatito :c
+        g1.quitaVida();
         System.out.println(g1.toString());
+        Gato g2 = new Gato("Camila",3,7);
+        System.out.println(g2.toString());
+        Gato g3 = new Gato("Marinette",2,6);
+        System.out.println(g3.toString());
         // Comparacion
         System.out.println("Compara el Animal 1 con Animal 2 = "+a1.equals(a2));
         System.out.println("Compara el Animal 2 con Animal 3 = "+a2.equals(a3)); } }
