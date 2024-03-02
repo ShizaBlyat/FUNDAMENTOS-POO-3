@@ -1,0 +1,38 @@
+package Animales;
+public class Animal {
+    public String nombre;
+    public int edad;
+    static int TotalAnimales = 0;
+    // Constructor sin argumentos
+    public Animal() {
+        this.nombre = "Desconocido";
+        this.edad = 0;
+        TotalAnimales++; }
+    // Constructor con argumentos
+    public Animal(String nombre, int edad) {
+        this.nombre = nombre;
+        this.edad = edad;
+        TotalAnimales++; }
+    //Constructor Copia (temp)
+    public Animal(Animal a) {
+        this.nombre = a.getNombre();
+        this.edad = a.getEdad();
+        TotalAnimales++; }
+    // Getters & Setters
+    public String getNombre() { return nombre; }
+    public void setNombre(String nombre) { this.nombre = nombre; }
+    public int getEdad() { return edad; }
+    public void setEdad(int edad) { this.edad = edad; }
+    @Override
+    public String toString() {
+        return "Hay " + TotalAnimales + " animales creados. Yo me llamo " + nombre + " y tengo " + edad + " años"; }
+    public Animal clone() {
+        Animal a = new Animal(this.nombre, this.edad);
+        return a; }
+    public boolean equals(Animal a) {
+        boolean respuesta;
+        if (a.getNombre().equals(this.getNombre()) && a.getEdad() == this.getEdad()) {
+            respuesta = true;
+        } else {
+            respuesta = false;
+        } return respuesta;} }
