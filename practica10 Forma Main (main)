@@ -1,0 +1,40 @@
+/* UPTx - Fundamentos de Programacion Orientada a Objetos
+ * Segunda Evaluacion      Grupo 5H
+ * Objetivo: Implementar una jerarquía de clases constituida por una clase Forma (abstracta) de la que hereden Circulo, Cuadrado, Triangulo y Rombo.
+ * Integrantes: Escobedo Ramirez Cesar Eyddel, Mejía Rojas Miriam, Ortiz Flores Missael, Tlalpa Sánchez Alan */
+import Figuras.*;
+public class Main {
+    public static void main(String[] args) {
+        //Instanciacion de las formas circulos con ID
+        Circulo c1 = new Circulo();
+        System.out.println(c1);
+        c1.identidad();
+        Circulo c2 = new Circulo();
+        System.out.println(c2);
+        c2.identidad();
+        //Instanciacion de las formas cuadrados con ID
+        Cuadrado cu1 = new Cuadrado();
+        System.out.println(cu1);
+        cu1.identidad();
+        Cuadrado cu2 = new Cuadrado();
+        System.out.println(cu2);
+        cu2.identidad();
+        //Instanciacion de las formas triangulos con ID
+        Triangulo t1 = new Triangulo();
+        System.out.println(t1);
+        t1.identidad();
+        Triangulo t2 = new Triangulo();
+        System.out.println(t2);
+        t2.identidad();
+        //Instanciacion de las formas rombo con ID
+        Rombo r1 = new Rombo();
+        System.out.println(r1);
+        r1.identidad();
+        Rombo r2 = new Rombo();
+        System.out.println(r2);
+        r2.identidad();
+        // No se puede crear una instancia directa de Forma (es abstracta)
+        //Forma f2 = new Forma();
+        //f2.identidad();
+        // No se puede llamar a identidad() en una referencia de tipo Forma (es un dato tipo void)
+        //(Forma)f.identidad(); "(Forma) Es redudante" } }
